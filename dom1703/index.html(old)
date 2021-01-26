@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДОМ1703</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-16">DOM<b>·</b>1703</a>
+                <div class="w3-right w3-hide-small">
+                    <a href="about.html" class="w3-bar-item w3-button w3-padding-16">About</a>
+                    <a href="contacts.html" class="w3-bar-item w3-button w3-padding-16">Contact</a>
+                </div>
+        </div>
+    </div>
+    
+    <hr id="home">
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:600px">
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">01<b> · </b>02<b> · </b>2020</p>
+        </div>
+    </div>
+    </hr>
+</body>
+</html>

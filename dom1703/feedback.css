@@ -1,0 +1,197 @@
+
+@font-face{font-family: MyLogoFont;src: url("fonts/logofont.ttf");}
+
+body{font-family: MyLogoFont;}
+
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:15;margin-top:6px}
+
+h1{
+font-size:16px;
+}
+.w3-bar-item{
+color: #2d203a;
+}
+b
+{
+  color: red;
+  font-family: MyLogoFont;
+}
+
+.bgimg-1 
+{
+    background-image: url('img/logo_1.jpg');
+    min-height: 100%;
+}
+
+@media only screen and (max-device-width: 800px) 
+{
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
+
+/*Дизайн кнопки*/
+/* Кнопка, используемая для открытия контактной формы-фиксируется в нижней части страницы */
+.open-button {
+  background-color: #555;
+  font-weight: 200;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Добавление стилей в контейнер форм */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Поля ввода полной ширины */
+.form-container input[type=text], .form-container input[type=phone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container input[type=text]:focus, .form-container input[type=phone]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Установите стиль для кнопки отправить/кнопка */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Добавьте красный цвет фона к кнопке отмена */
+.form-container .cancel {
+  background-color: grey;
+}
+
+/* Добавьте некоторые эффекты наведения на кнопки */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* FEEDBACK*/
+* {
+  box-sizing: border-box;
+}
+
+.feedback-form {
+  padding: 12px;
+}
+
+.feedback-form input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin: 6px 5px 16px 5px;
+}
+
+.feedback-form label {
+  margin-top: 5px;
+}
+
+.feedback-list {
+  list-style: none;
+  border: 1px;
+}
+
+.feedback-list p {
+  padding: 0;
+  margin: 0;  
+  padding-top: 10px;  
+}
+
+.feedback-author {
+  display: inline-block;
+}
+
+.feedback-item-delete {
+  
+}
+
+
+/* Style inputs 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+*/
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

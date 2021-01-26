@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ДОМ1703</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="feedback.css">
+   
+    
+</head>
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-32 w3-hover-amber" >DOM<b>·</b>1703</a>
+                <div class="w3-right w3-hide-small">
+                    <a href="about.html" class="w3-bar-item w3-button w3-padding-32 w3-hover-amber">О компании</a>
+                    <a href="contacts.html" class="w3-bar-item w3-button w3-padding-32 w3-hover-amber">Контакты</a>
+					<a href="blank.html" class="w3-bar-item w3-button w3-padding-32 w3-hover-amber">Оставить заявку</a>
+					<a href="feedback.html" class="w3-bar-item w3-button w3-padding-32 w3-hover-amber">Отзывы</a>
+					<a href="deal.html" class="w3-bar-item w3-button w3-padding-32 w3-hover-amber">Партнеры</a>
+                </div>
+        </div>
+    </div>
+	
+	<div class="container">
+  <div class="w3-content" style="max-width:1100px;margin-top:120px;margin-bottom:80px">
+   
+    <section class="feedback">
+      <ul  id="fdList" class="feedback-list">
+        <li class="feedback-item">
+          <div>
+            <p class="feedback-text">Терпение и труд</p>
+            <p class="feedback-author">Александр</p>
+            <p class="feedback-partner">Специалист: Василий</p>
+            <button class="feedback-item-delete">Удалить</button>
+          </div>
+        </li>
+        <li class="feedback-item">
+          <div>
+            <p class="feedback-text">Терпение и труд</p>
+            <p class="feedback-author">Александр Куококиминовский</p>
+            <p class="feedback-partner">Специалист: Гарик</p>
+            <button class="feedback-item-delete">Удалить</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  <div style="text-align:center">
+    <h2>Поделитесь Вашим мнением</h2>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-green">Оставить отзыв</button>
+  </div>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <div class="w3-container">
+      <form class="feedback-form" id="fdForm" action="/action_page.php">
+        <label for="fname">Имя</label>
+        <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+        <label for="lname">Фамилия</label>
+        <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия..">
+        
+		<label for="partner">Специалист</label>
+        <select id="partner" name="partner">
+          <option value="Смирнов Владислав Павлович">Смирнов Владислав Павлович</option>
+          <option value="Антоха МЦ">Антоха</option>
+          <option value="Василий Иванович">Василий Иванович</option>
+        </select>
+		
+		<label for="subject">Отзыв</label>
+        <textarea id="subject" name="subject" placeholder="Оцените работу наших специалистов.." style="height:130px"></textarea>
+        <input onclick="document.getElementById('id01').style.display='hide'" class="w3-btn w3-green" id="feedbackSubmit" type="submit" value="Оставить отзыв">
+      </form>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!-- <label for="fname">Имя</label>
+    <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+
+    <label for="lname">Фамилия</label>
+    <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия..">
+
+
+    <label for="subject">Отзыв</label>
+    <textarea id="subject" name="subject" placeholder="Оцените работу специалистов.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit"> -->
+
+  </div>
+</div>
+	
+<script src="app.js"></script>
+
+</body>
+
+</html>
+
